@@ -56,10 +56,8 @@ export default {
       form: {
         email: '',
         name: '',
-        food: null,
-        checked: [],
+        phone_number: '',
       },
-      foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
       show: true,
     };
   },
