@@ -6,6 +6,7 @@
     <b-form-input
       v-model="text"
       placeholder="Enter Todo"
+      @keydown
     />
     <div class="mt-2">
       Value: {{ text }}
@@ -16,6 +17,7 @@
       :key="msg"
       :msg="msg"
     />
+    <TodoItem :msg="msg" />
     </b-button@click>
   </div>
 </template>
@@ -30,9 +32,7 @@ import TodoItem from '@/components/TodoItem.vue';
   },
 })
 export default class TodoContainer extends Vue {
-  private todoList:Array<string> = ['test1', 'test2', 'test3']
-
-  private text = ''
+  private inputMsg = ''
 
   addToDo():void {
     this.todoList.push();
