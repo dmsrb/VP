@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h2>TodoItem</h2>
     {{ msg }}
   </div>
 </template>
