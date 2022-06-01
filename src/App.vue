@@ -4,8 +4,14 @@
       <router-link to="/">
         Home
       </router-link> |
+      <router-link to="/test1">
+        Calculator
+      </router-link> |
       <router-link to="/about">
         About
+      </router-link>
+       <router-link to="/alert">
+      |  Alert
       </router-link>
     </div>
     <router-view />
